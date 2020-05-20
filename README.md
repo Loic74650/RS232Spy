@@ -8,18 +8,18 @@
  
  Example output on serial monitor:<br /><br />
  
-		S1: SERIAL?<br />
-		S2: 6571108<br />
-		S1: CALDATE?<br />
-		S2: 12/12/19<br />
-		S1: WAVELENGTH?<br />
-		S2: 660<br />
-		S1: SOFTVER?<br />
-		S2: MPC-B-4.0.1<br />
-		S1: POWER?<br />
-		S2:  0004mW<br />
-		S1: SETCURRENT1?<br />
-		S2:  054.8%<br /><br />
+		S1: SERIAL?
+		S2: 6571108
+		S1: CALDATE?
+		S2: 12/12/19
+		S1: WAVELENGTH?
+		S2: 660
+		S1: SOFTVER?
+		S2: MPC-B-4.0.1
+		S1: POWER?
+		S2:  0004mW
+		S1: SETCURRENT1?
+		S2:  054.8%
 
 Note that for fast baud rates, the chronological order of the intercepted data may not be preserved accurately<br /><br />
  
