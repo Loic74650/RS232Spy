@@ -89,6 +89,7 @@ void setup()
       break;
   }
 
+  BaudRate = 19200;
   Serial1.begin(BaudRate);
   Serial2.begin(BaudRate);
   delay(200);
@@ -99,15 +100,15 @@ void loop()
 {
   if (Serial1.available() > 0) {
     //Serial.println("S1 received chars...");
-    String s = S1 + Serial1.readStringUntil('\n');
+    String s = S1 + Serial1.readStringUntil('\r');
     Serial.println(s);
   }
   if (Serial2.available() > 0) {
     //Serial.println("S2 received chars...");
-    String s = S2 + Serial2.readStringUntil('\n');
+    String s = S2 + Serial2.readStringUntil('\r');
     Serial.println(s);
   }
-  delay(10);
+  delay(1);
 }
 
 //Set individual bits of the DigInputs Byte
